@@ -24,3 +24,6 @@ Transit. User can select from them and see the instructions. Other option is "Wh
 users who are in that selected place are seen. The users are listed depending on how their hobbies match current users hobbies. When a
 user is selected from list, selected user's profile can be reviewed and there is chat option for chat with selected user.
 
+Attention!
+
+To be able to have benefits of user matching, you need to run your android device while it is connected to the pc. After you run the application on the device and face the users listing page, you should open platfoorm-tools and run adb.exe. In the console write "adb pull sdcard/Hobbies /'your_directory'" and later run the Word2Vec.ipyhb. After you run Word2Vec.ipynb, you write "adb push /'your_directory' sdcard/" to your console again. After this instructions, when you refresh the device screen, users will be listed depending on their hobby matching similarities.
