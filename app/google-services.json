@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "811954882769",
+    "firebase_url": "https://do2gether-8d14a.firebaseio.com",
+    "project_id": "do2gether-8d14a",
+    "storage_bucket": "do2gether-8d14a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811954882769:android:975415ea8805b30a",
+        "android_client_info": {
+          "package_name": "com.berkozer.do2getherfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811954882769-3ks61fm9omrr709gsooh5f023aek75q1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQsXnsbIsrrkUy6zLyJ2gTewY6sANUJnQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

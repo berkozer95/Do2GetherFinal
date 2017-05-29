@@ -1,0 +1,80 @@
+//noinspection GradleCompatible
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        applicationId "com.berkozer.do2getherfinal"
+        minSdkVersion 19
+        targetSdkVersion 25
+        multiDexEnabled true
+        versionCode 9
+        versionName "1.1"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor' // butterknife
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        exclude 'META-INF/rxjava.properties'
+        pickFirst 'META-INF/INDEX.LIST'
+        pickFirst 'META-INF/LICENSE'
+        pickFirst 'META-INF/io.netty.versions.properties'
+        exclude 'META-INF/notice'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+
+    compile 'com.android.support:multidex:1.0.1'
+
+    //Picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    //Firebase
+    compile 'com.google.firebase:firebase-auth:9.0.2'
+    compile 'com.google.firebase:firebase-database:9.0.2'
+    compile 'com.google.firebase:firebase-messaging:9.0.2'
+    compile 'com.google.firebase:firebase-storage:9.0.2'
+
+    compile 'com.google.android.gms:play-services-location:9.0.2'
+    compile 'com.android.support:design:25.3.1'
+    compile 'commons-io:commons-io:2.4'
+
+    //Facebook
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+
+    //okhttp
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+
+    //event bus
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+
